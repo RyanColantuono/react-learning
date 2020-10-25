@@ -1,0 +1,175 @@
+$theme-colors: (
+  "primary": #375a7f
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import url('../../node_modules/font-awesome/css/font-awesome.min.css');
+
+body {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    padding-top: 100px; //make sure content is below fixed top navbar
+}
+
+.img {
+    max-width: 100%;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+.menu {
+
+    .menu-item {
+        margin-bottom: 50px;
+
+        .thumb {
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+
+            img {
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+            }
+        }
+
+        .info {
+            padding-left: 28px;
+
+            h3 {
+                font-size: 24px;
+                color: #001D44;
+                font-weight: 400;
+                font-family: "Poppins", sans-serif;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-bottom: 0;
+                margin-top: 15px;
+                margin-bottom: 16px;
+            }
+            
+            span {
+                display: block;
+                font-weight: 400;
+                font-size: 26px;
+                color:  $primary;
+            }
+
+            button {
+                margin-top: 10px;
+            }
+              
+        }
+          
+    }
+}
+  
+
+  
+  @media (max-width: 767px) {
+    .menu .menu-item {
+      display: block !important;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .menu .menu-item {
+      display: block !important;
+    }
+  }
+  
+
+    
+  @media (max-width: 767px) {
+    .menu .menu-item .info {
+      display: block;
+      padding-left: 0;
+      margin-bottom: 15px;
+      margin-top: 20px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .menu .menu-item .info {
+      display: block;
+      padding-left: 0;
+      margin-top: 30px;
+    }
+  }
+  
+  .box-btn {
+    background: #fff;
+    color:  $primary;
+    display: inline-block;
+    padding: 12x 12px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    border: 0;
+    border: 1px solid $primary;
+    letter-spacing: 3px;
+    text-align: center;
+    color: $primary !important;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .box-btn:hover {
+    background: $primary;
+    color: #fff !important;
+    border: 1px solid $primary;
+  }
+  
+  .box-btn:focus {
+    outline: none;
+  }
+
+
+  
+#cart-icon .badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+#cart-icon fa {
+  font-size:24px;
+}
+#cart-icon .badge {
+  margin-right: 5px;
+}
+#cart-icon .label-warning[href],
+#cart-icon .badge-warning[href] {
+  background-color: #c67605;
+  margin-right: 5px;
+}
+#cart-icon #lblCartCount {
+    font-size: 12px;
+    background: #ff0000;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-left: -10px; 
+}
+
+#cart {
+
+  .cart-item td {
+    line-height: 40px;
+  }
+  
+}
