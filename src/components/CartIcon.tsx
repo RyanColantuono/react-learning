@@ -1,6 +1,9 @@
 import React from 'react';
 import * as types from '../types'
 import "../css/custom.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+
 
 type CartProps = {
     cart: types.OrderItem[]
@@ -15,7 +18,7 @@ class CartIcon extends React.Component<CartProps, {}> {
 
         return ( 
             <div id="cart-icon">
-                <i className="fa fa-lg fa-shopping-cart"></i>
+                <FontAwesomeIcon icon={faShoppingCart} size="lg" />
                 <span className='badge badge-warning' id='lblCartCount'> {quantity}</span>
             </div>
         )

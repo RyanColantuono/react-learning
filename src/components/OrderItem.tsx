@@ -2,6 +2,8 @@ import React from 'react';
 import * as types from '../types'
 import "../css/custom.css";
 import Utility from "../Utility";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 type OrderProps = {
     orderItem: types.OrderItem;
@@ -39,7 +41,7 @@ class OrderItem extends React.Component<OrderProps, {}> {
                     <div className="text-right">
             
                         <button className="btn btn-white border-secondary bg-white btn-md mb-2" onClick={() => this.props.removeOrderItem(item!.id)}>
-                            <i className="fa fa-trash"></i>
+                            <FontAwesomeIcon icon={faTrash} size="lg" />
                         </button>
                     </div>
                 </td> }
